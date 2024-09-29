@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>フォームコントロールの種類</title>
+    </head>
+    <body>
+        <form>
+            <!--テキスト入力欄-->
+            username:
+            <input type="text" maxlength="6"><br>
+            <!--暗証番号-->
+            password:
+            <input type="password" maxlength="6"><br>
+            <!--ラジオボタン-->
+            性別:
+            <input type="radio" name="gender" value="male">男
+            <input type="radio" name="gender" checked>女
+            <input type="radio" name="gender">他の<br>
+            <!--チェックぼっくす-->
+            趣味:
+            <input type="checkbox">ダンス
+            <input type="checkbox">ジョッギング
+            <input type="checkbox">歌を歌う
+            <input type="checkbox" checked>食べる<br>
+            <!--送信ボタン-->
+            <input type="submit" value="submit">
+            <button>送信</button><br>
+            <!--リセットボタン-->
+            <input type="reset" value="reset">
+            <button value="reset">リセット</button><br>
+            <!--一般ボタン-->
+            <input type="button" value="一般">
+            <button value="button">普通</button><br>
+            <!--テキストエリア-->
+            <textarea rows="5" cols="100"></textarea><br>
+            <!--ドロップダウンリスト-->
+            <select>
+                <option>新潟県</option>
+                <option>長野県</option>
+                <option disabled value="1">東京都</option>
+                <option selected>横浜県</option>
+                <option>北海道</option>
+            </select>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ラベル</title>
+    </head>
+    <body>
+        <form action="https://wwwbaidu.com">
+            <!--labelタグで説明文とテキストボックスを関連ずける-->
+            <label for="namae">名前：</label>
+            <input type="text" id="namae"><br>
+
+            <!--ラベルタグでラジオボタンとチェクボックスを関連付ける。-->
+            性別：
+            <label>
+                <input type="radio" name="gender">男
+            </label>
+            <label>
+                <input type="radio" name="gender">女
+            </label>
+
+            <hr>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="nama">名前：</label>
+                        </td>
+                        <td>
+                            <input type="text" id="nama">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            性別：
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="gender">男
+                            </label>
+                            <label>
+                                <input type="radio" name="gender">女
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="area">自己紹介：</label>
+                        </td>
+                        <td>
+                            <textarea rows="10" id="area"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
