@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin合并</title>
+    <style>
+        div {
+            width: 800px;
+            height: 700px;
+            background-color: bisque;
+            padding: 40px;
+        }
+        .box1 {
+            width: 400px;
+            height: 100px;
+            background-color: brown;
+        }
+        .box2 {
+            width: 400px;
+            height: 100px;
+            background-color: rgb(10, 220, 7);
+            /* visibility属性设置完隐藏后，位置还存在 */
+            visibility: hidden;
+            /* display: none设置完后元素被隐藏，常用该属性 */
+            display: none;
+        }
+        .box3 {
+            width: 400px;
+            height: 100px;
+            background-color: rgb(66, 9, 210);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-position,背景图像位置</title>
+    <style>
+        .item {
+            display: inline-block;
+            width: 400px;
+            height: 200px;
+            background-color: brown;
+            border: 3px solid #8a08e1;
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            /* background-position: center;
+            background-position: top;  */
+            background-position: top left;
+        }
+        .item1 {
+            background-image: url(../../../image/bg4.jpg);
+        }
+        .item2 {
+            background-image: url(../../../image/bg5.jpg)
+        }
+
+        .box {
+            display: inline-block;
+            width: 400px;
+            height: 200px;
+            background-color: brown;
+            border: 3px solid #8a08e1;
+            background-repeat: no-repeat;
+            /*使用坐标设置背景图像位置*/
+            /*设置的是图像的左上角位置*/
+            background-position: 100px 20px;
+            /*图片设置到元素之外*/
+            background-position: 420px 220px;
+            /*只设置一个长度，被认为是X坐标，Y轴位置默认取center*/
+            background-position: 100px;
+        }
+
+        .AA {
+            display: inline-block;
+            width: 400px;
+            height: 200px;
+            background-color: brown;
+            border: 3px solid #8a08e1;
+            background-repeat: no-repeat;
+            /*元素和图像各自创建一个坐标系
+            原点在各自的左上角，X轴从左到右，Y轴从上到下
+            根据百分比从元素上找到坐标点，根据百分比从图像上找到坐标点，两点重合*/
+
+            /*两个百分比*/
+            background-color: 0% 0%;
+            background-position: 100% 100%;
+            background-position: 50% 50%;
+
+            /*百分比和其他混搭*/
+            background-position: left 100%;
+
+            /*值使用一个百分比 被认为X方向位置，另一个方向默认center*/
+            background-position: 100%;
+        }
+
+        .repease-box {
+            display: inline-block;
+            width: 400px;
+            height: 200px;
+            background-color: brown;
+            border: 3px solid #8a08e1;
+            background-repeat: no-repeat;
+            background-position-x: 10px;
+            background-position-y: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>使用关键字设置背景图像位置</h1>
+    <div class="item item1">
+        Lorem ipsum dolor sit.
+    </div>
+    <div class="item item2">
+        Lorem ipsum dolor sit.
+    </div>
+
+    <h1>使用坐标设置背景图像位置</h1>
+    <div class="box item1"></div>
+    <div class="box item2"></div>
+
+    <h1>使用百分比设置背景图像位置</h1>
+    <div class="AA item1"></div>
+    <div class="AA item2"></div>
+
+    <h1>背景图像位置子属性</h1>
+    <div class="repease-box item1"></div>
+    <div class="repease-box item2"></div>
+</body>
+</html>

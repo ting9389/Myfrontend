@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距塌陷处理方式</title>
+    <style>
+        .sum {
+            width: 800px;
+            height: 700px;
+            background-color: #990;
+            /*解决方式一：给父级元素加个边框*/
+            /* border: 1px solid rgb(24/z2, 4, 143); */
+
+            /*解决方式二：给父级元素加个内间距*/
+            /* padding: 10px; */
+
+            /* 解决方式三：父级元素开启BFC */
+            overflow: hidden;
+        }
+        .box {
+            width: 300px;
+            height: 100px;
+            line-height: 30px;
+            text-align: center;
+            border: 2px solid rgb(239, 70, 8);
+        }
+        .box01 {
+            padding: 20px;
+            /*父级元素随着子集元素一起下移，发生塌陷*/
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, a?
+    </div>
+    <div class="sum">
+        <div class="box box01">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, obcaecati?
+        </div>
+        <div class="box box02">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, molestiae.
+        </div>
+        <div class="box box03">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, esse.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+    <style>
+        div {
+            margin: 30px;
+            width: 900px;
+            border: 2px solid;
+            color: #f12004;
+        }
+        .box01 {
+            /*设置左边框样式，默认none：无风格。<br>solid：实线。<br>dashed：虚线。<br>dotted：点线。<br>double：双实线。*/
+            border-left-style: dashed;
+            /*设置左边框颜色，默认跟文字一个颜色*/
+            border-left-color: aqua;
+            /*设置左边框宽度，默认时3px*/
+            border-left-width: 5px;
+            border-top-color: blueviolet;
+            border-top-width: 3px;
+            border-top-style: double;
+
+        }
+        .box02 {
+            border-right-color: blue;
+            border-right-style: dotted;
+            border-right-width: 6px;
+            border-bottom-color: #08e85a;
+            border-bottom-style: dashed;
+            border-bottom-width: 7px;
+        }
+        .box03 {
+            /*复合属性 bother-left*/
+            border-left: 6px solid pink;
+            border-top: 7px dashed red;
+            border-right: 8px dotted yellow;
+            border-bottom: 9px double orangered;
+        }
+        .box04 {
+            /*复合数属性border*/
+            border: 6px dashed orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officia inventore maiores ab, atque delectus dolores ad doloribus et debitis veritatis sint provident amet. Vitae expedita facilis non error. Aspernatur totam officia dignissimos vel nobis debitis aliquam aliquid, fugit enim.</div>
+    <div class="box box02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officia inventore maiores ab, atque delectus dolores ad doloribus et debitis veritatis sint provident amet. Vitae expedita facilis non error. Aspernatur totam officia dignissimos vel nobis debitis aliquam aliquid, fugit enim.</div>
+    <div class="box box03">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officia inventore maiores ab, atque delectus dolores ad doloribus et debitis veritatis sint provident amet. Vitae expedita facilis non error. Aspernatur totam officia dignissimos vel nobis debitis aliquam aliquid, fugit enim.</div>
+    <div class="box box04">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officia inventore maiores ab, atque delectus dolores ad doloribus et debitis veritatis sint provident amet. Vitae expedita facilis non error. Aspernatur totam officia dignissimos vel nobis debitis aliquam aliquid, fugit enim.</div>
+    <div class="box box05">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt adipisci natus rerum excepturi ratione inventore quas facere, qui doloribus odio similique maxime, exercitationem repellendus laudantium earum architecto dolorem quia perspiciatis aspernatur quo voluptatem eum. Eius repellat neque quisquam deleniti nihil?</div>
+</body>
+</html>
