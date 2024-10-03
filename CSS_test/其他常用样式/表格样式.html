@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格样式</title>
+    <style>
+        table {
+            width: 600px;
+            /*列宽固定，超出自动换行，保持列表一致宽*/
+            table-layout: fixed;
+            /*设置单元格之间的距离*/
+            border-spacing: 0px;
+            /*合并单元格边框，相邻单元格共用一个边框*/
+            border-collapse: collapse;
+            /*设置没有内容的单元格式隐藏还是显示，默认show*/
+            empty-cells: hide;
+        }
+        td,th {
+            padding: 10px;
+            border: 1px solid;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>学生の成績</caption>
+        <thead>
+            <tr>
+                <th>番号</th>
+                <th>名前</th>
+                <th>性別</th>
+                <th>成績</th>
+                <th>ランキング</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+            <tr>
+                <td>1</td>
+                <td>林</td>
+                <td>男</td>
+                <td>66</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>鈴木</td>
+                <td>男</td>
+                <td></td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>田中田中田中田中田中田中</td>
+                <td>女</td>
+                <td>88</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>王</td>
+                <td>女</td>
+                <td>92</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>山田</td>
+                <td>男</td>
+                <td>27</td>
+                <td>40</td>
+            </tr>
+    </table>
+</body>
+</html>

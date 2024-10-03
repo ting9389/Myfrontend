@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>line-height是font的子属性</line-height></title>
+    <style>
+        
+        .item {
+            width: 600px;
+            height: 500px;
+            background-color: #ccc;
+            line-height: 40px;
+            font: bold 14px/50px 'Courier New';
+            font: bold 14px/3 'Courier New';  
+        }
+    </style>
+</head>
+<body>
+    <!--line-height设置在font前边时，font的属性会覆盖行高，导致行高不生效-->
+    <!--font中可直接设置行高，写在字体样式的后边-->
+    <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nulla ea laboriosam fugiat rerum possimus esse magnam rem nihil illo! Earum dignissimos esse magnam! Inventore at, repudiandae nulla sint, quos obcaecati, libero minus ipsum minima sapiente assumenda dolore. Provident dolore impedit aspernatur ad explicabo autem, facilis distinctio iste possimus dolorum eligendi nesciunt amet officia praesentium neque molestiae suscipit nobis labore ut magnam. Nobis provident tenetur possimus odit eaque corporis at numquam omnis dolor adipisci. Rem numquam reprehenderit recusandae maiores iure? Labore odit id quis sunt ut voluptatem omnis, porro ullam sint, dolor esse, voluptatibus expedita eos similique aut at eligendi!
+    </div>
+</body>
+</html>
